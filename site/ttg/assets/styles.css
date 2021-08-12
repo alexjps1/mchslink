@@ -1,0 +1,50 @@
+body {
+    background: linear-gradient(0deg, #8656ac 0%, #c8b3e6 100%) no-repeat fixed;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+}
+
+.top-bar {
+    background-color: #0000008f;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+h1 {
+    color: white;
+    font-size: 70px;
+    font-family: tex-gyre-adventor-bold;
+    text-align: center;
+}
+
+.top-link {
+    font-family: tex-gyre-adventor-bold;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+
+.content {
+    background-color: #0000008f;
+    padding: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+    font-family: sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+@font-face {
+    font-family: tex-gyre-adventor-bold;
+    src: url(tex-gyre-adventor-bold.otf)
+}
