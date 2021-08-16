@@ -15,12 +15,24 @@ body {
     margin-right: 0px;
     margin-top: 0px;
     padding-top: 10px;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 h1 {
     color: white;
     font-size: 70px;
+    font-family: tex-gyre-adventor-bold;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+h2 {
+    color: white;
+    font-size: 35px;
+    margin-bottom: 10px;
+    margin-top: 10px;
     font-family: tex-gyre-adventor-bold;
     text-align: center;
 }
@@ -35,11 +47,15 @@ h1 {
 .content {
     background-color: #0000008f;
     padding: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
+    width: 90%;
+    max-width: 900px;
+    min-width: 100px;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 20px;
     border-radius: 10px;
     font-family: sans-serif;
-    text-align: center;
     color: white;
     font-size: 20px;
 }
