@@ -1,25 +1,159 @@
 <!DOCTYPE html>
 <head>
 	<link rel="stylesheet" href="main.css">
-	<script src="app.js"> </script>
 	<noscript>You need to enable JavaScript to view the full site.</noscript>
 </head>
 
-
 <html>
 	<body>
+		<!-- Image with image map -->
 		<div class="image" style="text-align: center; vertical-align: middle">
-			<img src="layout-full.png" alt="Map of event" usemap="#imagemap">
+			<img src="map.png" alt="Map of event" usemap="#imagemap">
 			<map name="imagemap">
-				<area shape="rect" coords="100, 160, 650, 300" onclick="backpacks()">
-				<area shape="rect" coords="730, 170, 1300, 400" onclick="videogame()">
-				<area shape="rect" coords="1360, 220, 1900, 330" onclick="photobooth()">
-				<area shape="rect" coords="400, 750, 815, 930" onclick="boardgames()">
-				<area shape="rect" coords="1250, 725, 1570, 1300" onclick="snacks()">
-				<area shape="rect" coords="1960, 230, 2600, 420" onclick="escaperoom()">
-				<area shape="rect" coords="2000, 800, 2600, 1000" onclick="lounge()">
-				
+				<area id="backpacks" shape="rect" coords="75, 210, 300, 330">
+				<area id="eatingArea" shape="rect" coords="75, 350, 300, 470">
+				<area id="tournament" shape="rect" coords="320, 215, 960, 430">
+				<area id="karaoke" shape="rect" coords="370, 450, 920, 560">
+				<area id="photobooth" shape="rect" coords="980, 210, 1290, 430">
+				<area id="shops" shape="rect" coords="250, 750, 680, 900">
+				<area id="boardGames" shape="rect" coords="700, 750, 1130, 900">
+				<area id="escapeRooms" shape="rect" coords="1350, 220, 1710, 490">
+				<area id="gameLounge" shape="rect" coords="1650, 510, 1850, 910">
+				<area id="checkin" shape="rect" coords="1180, 720, 1390, 950">
+
 			</map>
 		</div>
+
+		<!-- Image modals -->
+		<div id="backpacksModal" class="modal">
+			<div class="modal-content" style="text-align: center; vertical-align: middle">
+				<img class="resizeimage" src="icon.png">
+			</div>
+		</div>
+		<div id="eatingAreaModal" class="modal">
+			<div class="modal-content" style="text-align: center; vertical-align: middle">
+				<img class="resizeimage" src="icon.png">
+			</div>
+		</div>
+		<div id="tournamentModal" class="modal">
+			<div class="modal-content" style="text-align: center; vertical-align: middle">
+				<img class="resizeimage" src="icon.png">
+			</div>
+		</div>
+		<div id="karaokeModal" class="modal">
+			<div class="modal-content" style="text-align: center; vertical-align: middle">
+				<img class="resizeimage" src="icon.png">
+			</div>
+		</div>
+		<div id="photoboothModal" class="modal">
+			<div class="modal-content" style="text-align: center; vertical-align: middle">
+				<img class="resizeimage" src="icon.png">
+			</div>
+		</div>
+		<div id="shopsModal" class="modal">
+			<div class="modal-content" style="text-align: center; vertical-align: middle">
+				<img class="resizeimage" src="icon.png">
+			</div>
+		</div>
+		<div id="boardGamesModal" class="modal">
+			<div class="modal-content" style="text-align: center; vertical-align: middle">
+				<img class="resizeimage" src="icon.png">
+			</div>
+		</div>
+		<div id="escapeRoomsModal" class="modal">
+			<div class="modal-content" style="text-align: center; vertical-align: middle">
+				<img class="resizeimage" src="icon.png">
+			</div>
+		</div>
+		<div id="gameLoungeModal" class="modal">
+			<div class="modal-content" style="text-align: center; vertical-align: middle">
+				<img class="resizeimage" src="icon.png">
+			</div>
+		</div>
+		<div id="checkinModal" class="modal">
+			<div class="modal-content" style="text-align: center; vertical-align: middle">
+				<img class="resizeimage" src="icon.png">
+			</div>
+		</div>
+
 	</body>
 </html>
+
+<script>
+	// Find the modals
+	var backpacksModal = document.getElementById("backpacksModal");
+	var eatingAreaModal = document.getElementById("eatingAreaModal");
+	var tournamentModal = document.getElementById("tournamentModal");
+	var karaokeModal = document.getElementById("karaokeModal");
+	var photoboothModal = document.getElementById("photoboothModal");
+	var shopsModal = document.getElementById("shopsModal");
+	var boardGamesModal = document.getElementById("boardGamesModal");
+	var escapeRoomsModal = document.getElementById("escapeRoomsModal");
+	var gameLoungeModal = document.getElementById("gameLoungeModal");
+	var checkinModal = document.getElementById("checkinModal");
+
+	// When the user clicks the corresponding area, open the modal 
+	document.getElementById("backpacks").onclick = function() {
+			backpacksModal.style.display = "block";
+		}
+	document.getElementById("eatingArea").onclick = function() {
+			eatingAreaModal.style.display = "block";
+		}
+	document.getElementById("tournament").onclick = function() {
+			karaokeModal.style.display = "block";
+		}
+	document.getElementById("karaoke").onclick = function() {
+			karaokeModal.style.display = "block";
+		}
+	document.getElementById("photobooth").onclick = function() {
+			photoboothModal.style.display = "block";
+		}
+	document.getElementById("shops").onclick = function() {
+			shopsModal.style.display = "block";
+		}
+	document.getElementById("boardGames").onclick = function() {
+			boardGamesModal.style.display = "block";
+		}
+	document.getElementById("escapeRooms").onclick = function() {
+			escapeRoomsModal.style.display = "block";
+		}
+	document.getElementById("gameLounge").onclick = function() {
+			gameLoungeModal.style.display = "block";
+		}
+	document.getElementById("checkin").onclick = function() {
+			checkinModal.style.display = "block";
+		}
+	// When the user clicks anywhere outside of the modal, close it
+	window.onclick = function(event) {
+			if (event.target == backpacksModal) {
+					backpacksModal.style.display = "none";
+				}
+			if (event.target == eatingAreaModal) {
+					eatingAreaModal.style.display = "none";
+				}
+			if (event.target == tournamentModal) {
+					tournamentModal.style.display = "none";
+				}
+			if (event.target == karaokeModal) {
+					karaokeModal.style.display = "none";
+				}
+			if (event.target == photoboothModal) {
+					photoboothModal.style.display = "none";
+				}
+			if (event.target == shopsModal) {
+					shopsModal.style.display = "none";
+				}
+			if (event.target == boardGamesModal) {
+					boardGamesModal.style.display = "none";
+				}
+			if (event.target == escapeRoomsModal) {
+					escapeRoomsModal.style.display = "none";
+				}
+			if (event.target == gameLoungeModal) {
+					gameLoungeModal.style.display = "none";
+				}
+			if (event.target == checkinModal) {
+					checkinModal.style.display = "none";
+				}
+		}
+</script>
