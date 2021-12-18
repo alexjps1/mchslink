@@ -167,6 +167,11 @@
 			if (event.target == checkinModal) {
 					checkinModal.style.display = "none";
 					}
+		    
+		    // Inital modal closes no matter where it's clicked to accomodate iPhone Safari users
+		    if (introModal.style.display == "block") {
+				    introModal.style.display = "none";
+					}
 
 		    // Go to special page if link modal clicked
 		    if (event.target.closest('.modal') && tournamentModal.style.display == "block") {
