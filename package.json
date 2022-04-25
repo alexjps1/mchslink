@@ -4,7 +4,7 @@
   "description": "URL shortener for MCHS",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "devStart": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,13 @@
   "bugs": {
     "url": "https://gitlab.com/alexjps/mchslink/issues"
   },
-  "homepage": "https://gitlab.com/alexjps/mchslink#readme"
+  "homepage": "https://gitlab.com/alexjps/mchslink#readme",
+  "dependencies": {
+    "ejs": "^3.1.7",
+    "express": "^4.18.0",
+    "mongoose": "^6.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
 }
