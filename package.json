@@ -1,0 +1,19 @@
+{
+  "name": "mchslink",
+  "version": "1.0.0",
+  "description": "URL shortener for MCHS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/alexjps/mchslink.git"
+  },
+  "author": "Alex JPS",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://gitlab.com/alexjps/mchslink/issues"
+  },
+  "homepage": "https://gitlab.com/alexjps/mchslink#readme"
+}
