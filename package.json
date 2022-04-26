@@ -4,7 +4,7 @@
   "description": "URL shortener for MCHS",
   "main": "index.js",
   "scripts": {
-    "devStart": "nodemon server/index.js"
+    "devStart": "nodemon server.js"
   },
   "repository": {
     "type": "git",

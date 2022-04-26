@@ -5,17 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>mchs.link</title>
-    <link rel="stylesheet" type="text/css" href="/assets/styles/main.css">
+    <!-- <link rel="stylesheet" type="text/css" href="/assets/styles/main.css"> -->
 </head>
 <body>
    <h1> mchs.link </h1> 
    <form action="/shortUrls" method="POST">
-       <label for=""fullUrl" class="screenreader">URL</label>
-       <input required type="url" placeholder="Type your full URL..." name="fullUrl" id="fullUrl">
+       <label for="fullUrl" class="screenreader">URL</label>
+       <input required placeholder="Type your full URL..." type="url" name="fullUrl" id="fullUrl">
        <button type="submit">Enter</button>
    </form>
+
    <br>
    <br>
+
    <table>
        <thead>
            <tr>
@@ -25,11 +27,11 @@
            </tr>
        </thead>
        <tbody>
-           <tr>
-               <td><a href="https://alexjps.com">https://alexjps.com</a></td>
-               <td><a href="/123456">123456</a></td>
-               <td>0</td>
-           </tr>
+               <tr>
+                   <td><a href="https://alexjps.com">https://alexjps.com</a></td>
+                   <td><a href="/123456">123456</a></td>
+                   <td>0</td>
+               </tr>
        </tbody>
    </table>
 </body>
