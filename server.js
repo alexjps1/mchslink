@@ -34,7 +34,10 @@ app.post('/shortUrls', async (req, res) => {
         console.log(generatedUrl + ' > ./workspace/short-url.txt');
       });
 
-    res.redirect('/success')
+    setTimeout(function(){
+        res.redirect('/success')
+    }, 1000);
+
 })
 
 const PORT = 5000;
