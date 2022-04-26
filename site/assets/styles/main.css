@@ -1,0 +1,52 @@
+h1 {
+    font-family: sans-serif;
+    font-size: 40pt;
+}
+
+label {
+    font-family: sans-serif;
+}
+
+form {
+    font-family: sans-serif;
+    font-size: 20pt;
+}
+
+input {
+    font-family: sans-serif;
+    font-size: 20pt;
+}
+
+button {
+    font-family: sans-serif;
+    font-size: 20pt;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th {
+    font-family: sans-serif;
+    font-size: 20pt;
+    border: 2px solid midnightblue;
+    padding: 10px;
+}
+
+td {
+    font-family: sans-serif;
+    font-size: 20pt;
+    border: 2px solid midnightblue;
+    padding: 10px;
+}
+
+.screenreader {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
