@@ -9,7 +9,7 @@ app.get('/', (req, res) => {
     res.render('index')
 })
 
-//app.use(express.static(__dirname + './site'))
+app.use(express.static('./site'))
 
 app.post('/shortUrls', async (req, res) => {
     fs.writeFile('./workspace/full-url.txt', req.body.fullUrl, function (err) {
