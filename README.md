@@ -1,10 +1,11 @@
 # mchslink
 
 ## About
-A website and soon-to-be URL shortener for MCHS.
-This project aims to create a practical website for sharing information about extracurricular activities at school.
+A website and URL shortener for MCHS.
+This project aimed to create a practical website for sharing information about extracurricular activities at school.
+It has served this purpose and is no longer in development.
 
-The website is running live at [https://mchs.link](https://mchs.link) with the files in the `live` branch.
+The website (was) running live at [mchs.link](https://mchs.link) with the files in the `live` branch.
 
 ## Dependencies
 The website is using the following technologies, but alternatives can also be used:
@@ -13,18 +14,14 @@ The website is using the following technologies, but alternatives can also be us
 - HTML, CSS, JavaScript (of course)  
 
 ## Branches
-There are two branches for the development of the project:
-- `main` (underlying structure)
-- `live` (actual content on site)
-
-The `live` branch contains content that is currently on the site, while the `main` branch is like a template to which the content is added.
-Changes to `main` will be merged into `live`, but never the other way around.
+As briefly as possible...
+- `main` contains templates and underlying structure
+- `live` is the current site contents (site no longer up)
+- `dev2` is a defunct development branch for URL shortener
+- `dev` has URL shortener code which runs locally
+- `map-guide` has code for generating an interactive event map
 
 ## Contact
-Alex  
-alexjps@alexjps.com  
-
-PGP Public Key  
-https://alexjps.com/pubkey  
-72280122083ECEDE31EAC32C22BD48E34FA00D44  
-Tutanota emails will be encrypted properly  
+Alex JPS  
+git@alexjps.com  
+[alexjps.com/pubkey](https://alexjps.com/pubkey)
